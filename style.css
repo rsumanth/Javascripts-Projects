@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+
+html{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    background-color: #f6f6f6;
+    background-image: url("python_3.svg");
+    font-family:Montserrat, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.syntax-container{
+    width:auto;
+    max-width:900px;
+    padding:20px 30px;
+    border-radius:10px;
+    background-color:rgba(255,255,255,0.6);
+    box-shadow:0 10px 10px 10px rgba(0,0,0,0.2);
+
+}
+
+.Syntax{
+    font-size:2.75rem;
+    /* here the rem=16 px */
+    font-weight:400px;
+}
+
+.long-syntax{
+    font-size:2rem;
+}
+
+.fa-quote-left{
+    font-size:3rem;
+}
+
+.syntax-concept{
+    margin-top:10px;
+}
+
+.concept{
+    font-size:1.5rem;
+    font-style:Arial;
+}
+
+.button-syntax{
+
+    margin-top:15px;
+    display:flex;
+    justify-content:space-between;
+
+}
+
+
+button{
+    cursor:pointer;
+    font-size:1.2rem;
+    height:2.5rem;
+    border:none;
+    border-radius:10px;
+    color:#f6f6f6;
+    background:#333;
+    outline:none;
+    padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+    box-shadow:0 0.3rem rgba(121,121,121,0.65);
+
+
+}
+
+button:hover{
+    filter:brightness(110%);
+}
+
+button:active{
+    transform:translate(0,0.3rem);
+    /* here transform not work only i just replaced , */
+    box-shadow:0 0.1rem rgba(255,255,255,0.65);
+}
+
+.twitter-button:hover{
+    color:#38a1f3;
+}
+.fa-twitter{
+    font-size:1.5rem;
+}
+
+
+
+/* here it is used for screen and tablets less than 1000 pixels */
+@media screen and (max-width:1000px) {
+    .syntax-container{
+     margin:auto 10px;
+    }
+
+    .syntax-text{
+        font-size:2.5rem;
+    }
+    
+}
