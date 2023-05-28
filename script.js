@@ -28,7 +28,7 @@ function newSyntax(){
 /*why we using this `` (template string) back quote is for we want to pass a variable and it converts in to a string $ it is for passing a variable*/
 function tweetsyntax(){
     
-    const twitterUrl=`https://twitter.com/intent/tweet?text=${syntaxText.textcontent}-${Concept.textContent}`;
+    const twitterUrl=`https://twitter.com/intent/tweet?text=${syntaxText.innerText} - "${Concept.innerText}" `;
     window.open(twitterUrl,'_blank');
 
 }
